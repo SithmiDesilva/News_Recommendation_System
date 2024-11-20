@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Font?>
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.testproject.View_News"
+            prefHeight="400.0" prefWidth="600.0">
+
+    <children>
+        <Pane fx:id="pane13" layoutY="99.0" prefHeight="376.0" prefWidth="235.0" style="-fx-background-color: #a5b5e8;">
+            <children>
+                <Button fx:id="profile2id" layoutX="36.0" layoutY="45.0" mnemonicParsing="false" onAction="#onprofile2idButtonOnClick" prefHeight="25.0" prefWidth="164.0" text="Profile">
+                    <font>
+                        <Font name="Times New Roman Bold" size="14.0" />
+                    </font>
+                </Button>
+                <Button fx:id="view2id" layoutX="36.0" layoutY="90.0" mnemonicParsing="false" onAction="#onview2idButtonOnClick" prefHeight="25.0" prefWidth="164.0" text="View News">
+                    <font>
+                        <Font name="Times New Roman Bold" size="14.0" />
+                    </font>
+                </Button>
+                <Button fx:id="savenews2id" layoutX="36.0" layoutY="175.0" mnemonicParsing="false" onAction="#onsavenews2idButtonOnClick" prefHeight="25.0" prefWidth="164.0" text="Saved News">
+                    <font>
+                        <Font name="Times New Roman Bold" size="14.0" />
+                    </font>
+                </Button>
+                <Button fx:id="logout2" layoutX="36.0" layoutY="220.0" mnemonicParsing="false" onAction="#onlogoutButtonOnClick" prefHeight="25.0" prefWidth="164.0" text="LogOut">
+                    <font>
+                        <Font name="Times New Roman Bold" size="14.0" />
+                    </font>
+                </Button>
+                <Button fx:id="recommendation2id" layoutX="36.0" layoutY="130.0" mnemonicParsing="false" onAction="#onrecommendationidButtonOnClick" text="News Recommendations">
+                    <font>
+                        <Font name="Times New Roman Bold" size="14.0" />
+                    </font>
+                </Button>
+            </children>
+        </Pane>
+        <Pane fx:id="pane15" layoutX="235.0" prefHeight="475.0" prefWidth="385.0" style="-fx-background-color: #dcf0fa;">
+            <children>
+                <Pane fx:id="pane16" prefHeight="81.0" prefWidth="385.0" style="-fx-background-color: #a5b5e8;">
+                    <children>
+                        <Label fx:id="pane14" layoutX="14.0" layoutY="23.0" text="View Latest News" textFill="#1b1b1b">
+                            <font>
+                                <Font name="Times New Roman Bold" size="36.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </Pane>
+                <ScrollBar fx:id="scrollbar1" layoutX="371.0" layoutY="81.0" orientation="VERTICAL" prefHeight="395.0" prefWidth="15.0" />
+                <TextArea fx:id="field1" layoutX="14.0" layoutY="94.0" prefHeight="105.0" prefWidth="342.0" />
+                <TextArea fx:id="field2" layoutX="14.0" layoutY="214.0" prefHeight="116.0" prefWidth="342.0" />
+                <TextArea fx:id="field3" layoutX="14.0" layoutY="349.0" prefHeight="116.0" prefWidth="342.0" />
+            </children>
+        </Pane>
+        <Label fx:id="userlabel2" layoutX="34.0" layoutY="40.0" text="User Dashboard" textFill="#e9e1e1">
+            <font>
+                <Font name="Times New Roman Bold" size="24.0" />
+            </font>
+        </Label>
+    </children>
+
+</AnchorPane>
