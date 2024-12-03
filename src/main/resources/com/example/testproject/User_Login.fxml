@@ -2,51 +2,55 @@
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
-<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<Pane fx:id="pane1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="474.0" prefWidth="620.0" style="-fx-background-color: #b9e2f5;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.testproject.UserLogin">
-    <children>
-        <Pane fx:id="pane2" prefHeight="76.0" prefWidth="620.0" style="-fx-background-color: #dcf0fa;">
-            <children>
-                <Label layoutX="62.0" layoutY="10.0" prefHeight="56.0" prefWidth="518.0" text="     Personalized News Recommendation System" textFill="#050f67">
-                    <font>
-                        <Font name="Times New Roman Bold" size="24.0" />
-                    </font>
-                </Label>
-            </children>
-        </Pane>
-        <Pane fx:id="pane3" layoutY="76.0" prefHeight="399.0" prefWidth="216.0" style="-fx-background-color: white;">
-            <children>
-                <ImageView fitHeight="200.0" fitWidth="216.0" layoutX="1.0">
-                    <image>
-                        <Image url="@../../../../../../../../Documents/OOP/image1.png" />
-                    </image>
-                </ImageView>
-                <ImageView fitHeight="192.0" fitWidth="216.0" layoutX="1.0" layoutY="207.0">
-                    <image>
-                        <Image url="@../../../../../../../../Documents/OOP/image2.png" />
-                    </image>
-                </ImageView>
-            </children>
-        </Pane>
-        <Pane fx:id="pane4" layoutX="289.0" layoutY="96.0" prefHeight="346.0" prefWidth="277.0" style="-fx-background-color: white;">
-            <children>
-                <Label fx:id="signin" layoutX="83.0" layoutY="14.0" prefHeight="38.0" prefWidth="101.0" text="     SignIn">
-                    <font>
-                        <Font name="Times New Roman Bold" size="18.0" />
-                    </font>
-                </Label>
-                <Label fx:id="email1id" layoutX="3.0" layoutY="87.0" prefHeight="17.0" prefWidth="52.0" text="Email" />
-                <Label fx:id="password1id" layoutX="5.0" layoutY="156.0" prefHeight="17.0" prefWidth="59.0" text="Password" />
-                <TextField fx:id="textbox1" layoutX="71.0" layoutY="83.0" prefHeight="25.0" prefWidth="184.0" />
-                <TextField fx:id="textbox2" layoutX="71.0" layoutY="152.0" prefHeight="25.0" prefWidth="184.0" />
-                <Button fx:id="login1id" layoutX="28.0" layoutY="251.0" mnemonicParsing="false" onAction="#onLogin1idButtonOnClick" text="Login" />
-                <Button fx:id="register1id" layoutX="203.0" layoutY="251.0" mnemonicParsing="false" onAction="#onRegisterButtonOnClick" text="Register" />
-            </children>
-        </Pane>
-    </children>
-</Pane>
+<AnchorPane fx:id="anchorpane1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="474.0" prefWidth="620.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.testproject.UserLogin">
+   <children>
+      <Label fx:id="label1" layoutX="71.0" layoutY="7.0" prefHeight="45.0" prefWidth="457.0" text="Personalized News Recommendation System" textFill="#a5b5e8">
+         <font>
+            <Font name="Times New Roman Bold" size="24.0" />
+         </font>
+      </Label>
+      <AnchorPane fx:id="anchorpane2" layoutX="300.0" layoutY="65.0" prefHeight="382.0" prefWidth="306.0" style="-fx-background-color: white;">
+         <children>
+            <Label fx:id="label2" layoutX="106.0" layoutY="30.0" text="LogIn">
+               <font>
+                  <Font name="Times New Roman Bold" size="36.0" />
+               </font>
+            </Label>
+            <Label fx:id="label3" layoutX="14.0" layoutY="131.0" text="User Email">
+               <font>
+                  <Font name="Times New Roman Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="label4" layoutX="19.0" layoutY="196.0" text="Password">
+               <font>
+                  <Font name="Times New Roman Bold" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="textfield1" layoutX="96.0" layoutY="126.0" prefHeight="25.0" prefWidth="187.0" />
+            <PasswordField fx:id="passwordfield" layoutX="96.0" layoutY="191.0" prefHeight="25.0" prefWidth="187.0" />
+            <Button fx:id="login" layoutX="19.0" layoutY="321.0" mnemonicParsing="false" onAction="#onLoginButtonOnClick" prefHeight="25.0" prefWidth="89.0" style="-fx-background-color: #22E21D;" text="LogIn">
+               <font>
+                  <Font name="Times New Roman Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="register" layoutX="190.0" layoutY="321.0" mnemonicParsing="false" onAction="#onRegisterButtonOnClick" prefHeight="25.0" prefWidth="89.0" style="-fx-background-color: #1297ED;" text="Register">
+               <font>
+                  <Font name="Times New Roman Bold" size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <ImageView fx:id="image2" fitHeight="382.0" fitWidth="279.0" layoutX="9.0" layoutY="65.0" pickOnBounds="true">
+         <image>
+            <Image url="@Images/image20.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
