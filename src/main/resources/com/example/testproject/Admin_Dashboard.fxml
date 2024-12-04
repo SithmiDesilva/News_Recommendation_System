@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorPane" prefHeight="474.0" prefWidth="620.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.testproject.AdminDashboardController">
+   <children>
+      <Button fx:id="normal" layoutX="8.0" layoutY="70.0" mnemonicParsing="false" prefHeight="401.0" prefWidth="209.0" style="-fx-background-color: #820c51;" />
+      <Label fx:id="dashboardLabel" layoutX="14.0" layoutY="14.0" text="DASHBOARD" textFill="#a5b5e8">
+         <font>
+            <Font name="Times New Roman Bold" size="36.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="dashImage" fitHeight="384.0" fitWidth="393.0" layoutX="223.0" layoutY="78.0" pickOnBounds="true">
+         <image>
+            <Image url="@Images/dash.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="manageUsers" layoutX="13.0" layoutY="203.0" mnemonicParsing="false" onAction="#onManageUsersButtonOnClick" prefHeight="33.0" prefWidth="199.0" style="-fx-background-color: #a5b5e8;" text="Manage Users">
+         <font>
+            <Font name="Times New Roman Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="manageNews" layoutX="14.0" layoutY="262.0" mnemonicParsing="false" onAction="#onManageNewsButtonOnClick" prefHeight="33.0" prefWidth="199.0" style="-fx-background-color: #a5b5e8;" text="Manage News Articles">
+         <font>
+            <Font name="Times New Roman Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="logout" layoutX="14.0" layoutY="373.0" mnemonicParsing="false" onAction="#onLogoutButtonOnClick" prefHeight="33.0" prefWidth="199.0" style="-fx-background-color: #a5b5e8;" text="LogOut">
+         <font>
+            <Font name="Times New Roman Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="dashboard" layoutX="13.0" layoutY="146.0" mnemonicParsing="false" onAction="#onDashboardButtonOnClick" prefHeight="33.0" prefWidth="199.0" style="-fx-background-color: #a5b5e8;" text="Dashboard">
+         <font>
+            <Font name="Times New Roman Bold" size="14.0" />
+         </font>
+      </Button>
+      <ImageView fx:id="home" fitHeight="26.0" fitWidth="31.0" layoutX="29.0" layoutY="150.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Images/8666691_home_icon.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="user" fitHeight="26.0" fitWidth="31.0" layoutX="29.0" layoutY="207.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Images/user_Icon.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="news" fitHeight="26.0" fitWidth="26.0" layoutX="16.0" layoutY="266.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Images/103657_news_icon.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="power" fitHeight="26.0" fitWidth="26.0" layoutX="29.0" layoutY="377.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Images/1564506_close_exit_logout_power_icon.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="back" layoutX="546.0" layoutY="22.0" mnemonicParsing="false" onAction="#onBackButtonOnClick" prefHeight="22.0" prefWidth="53.0" style="-fx-background-color: #34c9eb;" text="Back">
+         <font>
+            <Font name="Eras Bold ITC" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="report" layoutX="13.0" layoutY="317.0" mnemonicParsing="false" onAction="#onReportButtonOnClick" prefHeight="33.0" prefWidth="199.0" style="-fx-background-color: #a5b5e8;" text="Generate Report">
+         <font>
+            <Font name="Times New Roman Bold" size="14.0" />
+         </font>
+      </Button>
+      <ImageView fx:id="saveImage1" fitHeight="28.0" fitWidth="28.0" layoutX="15.0" layoutY="320.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Images/4313115_global_information_news_script_writing_icon.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
