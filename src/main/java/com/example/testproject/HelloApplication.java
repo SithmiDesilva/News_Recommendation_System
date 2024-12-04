@@ -14,10 +14,11 @@ public class HelloApplication extends Application {
         Parent root = loader.load();
 
         // Set up the stage
-        primaryStage.setTitle("Prompt Application");
+        primaryStage.setTitle("Personalized News Recommendation System");
         primaryStage.setScene(new Scene(root));
         primaryStage.show();
     }
+
 
     public static void main(String[] args) {
         launch(args); // Launch the JavaFX application
