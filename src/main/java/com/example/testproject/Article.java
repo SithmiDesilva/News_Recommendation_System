@@ -15,7 +15,7 @@ public class Article {
         this.author = new SimpleStringProperty(author);
         this.headline = new SimpleStringProperty(headline);
         this.content = new SimpleStringProperty(content);
-       // Initialize the image property
+        // Initialize the image property
     }
 
     public String getCategory() {
