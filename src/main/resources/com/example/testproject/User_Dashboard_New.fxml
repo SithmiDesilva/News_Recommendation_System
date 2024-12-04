@@ -14,27 +14,22 @@
       <AnchorPane fx:id="anchorPane1" prefHeight="700.0" prefWidth="500.0" style="-fx-background-color: black;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
             <Button fx:id="buttonOne" layoutX="7.0" layoutY="65.33333333333333" mnemonicParsing="false" prefHeight="403.0" prefWidth="198.0" style="-fx-background-color: #820c51;" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="65.0" />
-            <Button fx:id="dashboard" layoutX="10.0" layoutY="112.0" mnemonicParsing="false" onAction="#onDashboardButtonOnClick" prefHeight="40.0" prefWidth="191.0" style="-fx-background-color: #a5b5e8;" text="Dashboard">
+            <Button fx:id="dashboard" layoutX="10.0" layoutY="126.0" mnemonicParsing="false" onAction="#onDashboardButtonOnClick" prefHeight="40.0" prefWidth="191.0" style="-fx-background-color: #a5b5e8;" text="Dashboard">
                <font>
                   <Font name="Times New Roman Bold" size="14.0" />
                </font>
             </Button>
-            <Button fx:id="view" layoutX="10.0" layoutY="169.0" mnemonicParsing="false" onAction="#onViewButtonOnClick" prefHeight="37.0" prefWidth="191.0" style="-fx-background-color: #a5b5e8;" text="View News">
+            <Button fx:id="view" layoutX="10.0" layoutY="183.0" mnemonicParsing="false" onAction="#onViewButtonOnClick" prefHeight="37.0" prefWidth="191.0" style="-fx-background-color: #a5b5e8;" text="View News">
                <font>
                   <Font name="Times New Roman Bold" size="14.0" />
                </font>
             </Button>
-            <Button fx:id="recommendations" layoutX="10.0" layoutY="223.0" mnemonicParsing="false" onAction="#onRecommendationsButtonOnClick" prefHeight="37.0" prefWidth="191.0" style="-fx-background-color: #a5b5e8;" text="      News Recommendations">
+            <Button fx:id="recommendations" layoutX="10.0" layoutY="234.0" mnemonicParsing="false" onAction="#onRecommendationsButtonOnClick" prefHeight="37.0" prefWidth="191.0" style="-fx-background-color: #a5b5e8;" text="      News Recommendations">
                <font>
                   <Font name="Times New Roman Bold" size="14.0" />
                </font>
             </Button>
-            <Button fx:id="saveid" layoutX="10.0" layoutY="276.0" mnemonicParsing="false" onAction="#onSaveButtonOnClick" prefHeight="37.0" prefWidth="191.0" style="-fx-background-color: #a5b5e8;" text="Saved News">
-               <font>
-                  <Font name="Times New Roman Bold" size="14.0" />
-               </font>
-            </Button>
-            <Button fx:id="logout" layoutX="10.0" layoutY="329.0" mnemonicParsing="false" onAction="#onLogoutButtonOnClick" prefHeight="37.0" prefWidth="191.0" style="-fx-background-color: #a5b5e8;" text="Logout">
+            <Button fx:id="logout" layoutX="10.0" layoutY="284.0" mnemonicParsing="false" onAction="#onLogoutButtonOnClick" prefHeight="37.0" prefWidth="191.0" style="-fx-background-color: #a5b5e8;" text="Logout">
                <font>
                   <Font name="Times New Roman Bold" size="14.0" />
                </font>
@@ -68,27 +63,22 @@
                   </ImageView>
                </children>
             </Pane>
-            <ImageView fx:id="dashboardImage" fitHeight="28.0" fitWidth="32.0" layoutX="14.0" layoutY="118.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="dashboardImage" fitHeight="28.0" fitWidth="32.0" layoutX="14.0" layoutY="132.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@Images/8666691_home_icon.png" />
                </image>
             </ImageView>
-            <ImageView fx:id="viewImage" fitHeight="35.0" fitWidth="28.0" layoutX="14.0" layoutY="174.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="viewImage" fitHeight="35.0" fitWidth="28.0" layoutX="14.0" layoutY="188.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@Images/103657_news_icon.png" />
                </image>
             </ImageView>
-            <ImageView fx:id="recommendationsImage" fitHeight="28.0" fitWidth="22.0" layoutX="17.0" layoutY="231.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="recommendationsImage" fitHeight="28.0" fitWidth="22.0" layoutX="17.0" layoutY="242.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@Images/103657_news_icon.png" />
                </image>
             </ImageView>
-            <ImageView fx:id="saveImage" fitHeight="28.0" fitWidth="28.0" layoutX="14.0" layoutY="281.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@Images/4313115_global_information_news_script_writing_icon.png" />
-               </image>
-            </ImageView>
-            <ImageView fx:id="logoutImage" fitHeight="28.0" fitWidth="28.0" layoutX="14.0" layoutY="334.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="logoutImage" fitHeight="28.0" fitWidth="28.0" layoutX="14.0" layoutY="289.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@Images/1564506_close_exit_logout_power_icon.png" />
                </image>
@@ -98,12 +88,12 @@
                   <Font name="Times New Roman Bold" size="36.0" />
                </font>
             </Label>
-            <Button fx:id="deleteAccount" layoutX="10.0" layoutY="385.0" mnemonicParsing="false" onAction="#onDeleteButtonOnClick" prefHeight="37.0" prefWidth="191.0" style="-fx-background-color: #a5b5e8;" text="Delete Account">
+            <Button fx:id="deleteAccount" layoutX="10.0" layoutY="336.0" mnemonicParsing="false" onAction="#onDeleteButtonOnClick" prefHeight="37.0" prefWidth="191.0" style="-fx-background-color: #a5b5e8;" text="Delete Account">
                <font>
                   <Font name="Times New Roman Bold" size="14.0" />
                </font>
             </Button>
-            <ImageView fx:id="logoutImage1" fitHeight="28.0" fitWidth="28.0" layoutX="14.0" layoutY="390.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="logoutImage1" fitHeight="28.0" fitWidth="28.0" layoutX="14.0" layoutY="341.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@Images/8666609_user_icon.png" />
                </image>

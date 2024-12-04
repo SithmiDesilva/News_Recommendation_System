@@ -69,18 +69,6 @@ public class UserDashboardController {
         loadScene("View_News.fxml", actionEvent);
     }
 
-    @FXML
-    public void onSaveButtonOnClick(ActionEvent actionEvent) {
-        try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("News_Saved.fxml"));
-            Parent root = loader.load();
-            Stage stage = (Stage) saveid.getScene().getWindow();
-            stage.setScene(new Scene(root));
-            stage.setTitle("News Saved");
-        } catch (Exception e) {
-            throw new RuntimeException(e);
-        }
-    }
 
     @FXML
     public void onLogoutButtonOnClick(ActionEvent actionEvent) {
