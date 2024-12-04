@@ -1,23 +1,66 @@
 package com.example.testproject;
 
+import com.mongodb.MongoClientSettings;
+import com.mongodb.ServerAddress;
 import com.mongodb.client.MongoClient;
 import com.mongodb.client.MongoClients;
+import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoDatabase;
+import org.bson.Document;
+
+import java.util.Arrays;
 
 public class DatabaseManager {
-    public static void main(String[] args) {
-        // Replace the URI with your MongoDB connection string
-        String uri = "mongodb://localhost:27017"; // Default URI for local MongoDB
 
-        // Create a MongoClient
-        try (MongoClient mongoClient = MongoClients.create(uri)) {
-            // Connect to the database
-            MongoDatabase database = mongoClient.getDatabase("NewsRecommendationDB"); // Replace 'testdb' with your database name
+    private static final String HOST = "localhost"; // MongoDB host
+    private static final int PORT = 27017; // MongoDB port
+    private static final String DATABASE_NAME = "NewsRecommendationDB"; // Your database name
 
-            // Verify connection by printing database name
-            System.out.println("Connected to database: " + database.getName());
+    private static MongoClient mongoClient;
+    private static MongoDatabase database;
+
+    // Static block to initialize the MongoDB connection
+    static {
+        try {
+            // Configure MongoClientSettings
+            MongoClientSettings settings = MongoClientSettings.builder()
+                    .applyToClusterSettings(builder ->
+                            builder.hosts(Arrays.asList(new ServerAddress(HOST, PORT))))
+                    .build();
+
+            // Initialize MongoClient and connect to the database
+            mongoClient = MongoClients.create(settings);
+            database = mongoClient.getDatabase(DATABASE_NAME);
+
+            System.out.println("Successfully connected to MongoDB database: " + DATABASE_NAME);
         } catch (Exception e) {
+            System.err.println("Failed to connect to MongoDB:");
             e.printStackTrace();
         }
+    }
+
+    // Method to get the database instance
+    public static MongoDatabase getDatabase() {
+        return database;
+    }
+    public static MongoCollection<Document> getArticleCollection() {
+        return database.getCollection("articles"); // Replace with the actual collection name
+    }
+
+    // Get the "user_interactions" collection
+    public static MongoCollection<Document> getUserInteractionCollection() {
+        return database.getCollection("userInteractions"); // Replace with the actual collection name
+    }
+
+    // Close the MongoClient (optional, for graceful shutdown)
+    public static void closeConnection() {
+        if (mongoClient != null) {
+            mongoClient.close();
+            System.out.println("MongoDB connection closed.");
+        }
+    }
+
+    public static MongoCollection<Document> getuserCollection() {
+        return getDatabase().getCollection("user");
     }
 }
