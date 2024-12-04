@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorPane" prefHeight="474.0" prefWidth="620.0" style="-fx-background-color: #dcf0fa;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.testproject.ManageNewsController">
+   <children>
+      <Pane fx:id="pane" prefHeight="82.0" prefWidth="620.0" style="-fx-background-color: black;">
+         <children>
+            <Label fx:id="manageNewsLabel" layoutX="14.0" layoutY="21.0" text="Manage News Articles" textFill="#a5b5e8">
+               <font>
+                  <Font name="Times New Roman Bold" size="36.0" />
+               </font>
+            </Label>
+            <Button fx:id="home" layoutX="514.0" layoutY="27.0" mnemonicParsing="false" onAction="#onHomeButtonOnClick" prefHeight="28.0" prefWidth="92.0" style="-fx-background-color: #b01058;" text="       Home">
+               <font>
+                  <Font name="Times New Roman Bold" size="14.0" />
+               </font>
+            </Button>
+            <ImageView fx:id="homeImage" fitHeight="25.0" fitWidth="25.0" layoutX="523.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/8666691_home_icon.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <TableView fx:id="newsTable" layoutX="14.0" layoutY="99.0" prefHeight="320.0" prefWidth="587.0">
+        <columns>
+          <TableColumn fx:id="category" prefWidth="138.66665649414062" text="Category" />
+          <TableColumn fx:id="author" prefWidth="152.0" text="Author" />
+            <TableColumn fx:id="headline" prefWidth="153.33331298828125" text="Headline" />
+            <TableColumn fx:id="content" prefWidth="144.00006103515625" text="Content" />
+        </columns>
+      </TableView>
+      <Button fx:id="delete" layoutX="430.0" layoutY="432.0" mnemonicParsing="false" onAction="#onDeleteButtonOnClick" prefHeight="25.0" prefWidth="79.0" style="-fx-background-color: #950F1D;" text="Delete">
+         <font>
+            <Font name="Eras Bold ITC" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="addNews" layoutX="524.0" layoutY="431.0" mnemonicParsing="false" onAction="#onAddNewsButtonOnClick" prefHeight="25.0" prefWidth="79.0" style="-fx-background-color: #8ceb34;" text="Add News">
+         <font>
+            <Font name="Eras Bold ITC" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="edit" layoutX="330.0" layoutY="432.0" mnemonicParsing="false" onAction="#onEditButtonOnClick" prefHeight="25.0" prefWidth="79.0" style="-fx-background-color: #34c9eb;" text="Edit">
+         <font>
+            <Font name="Eras Bold ITC" size="13.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
